@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+    <div id="qr-reader" style="width: 600px"></div>
+    <script>
+
+          function onScanSuccess(decodedText, decodedResult) {
+           console.log(`Code scanned = ${decodedText}`, decodedResult);
+            codeScanned(decodedText);
+      }
+      var html5QrcodeScanner = new Html5QrcodeScanner(
+        "qr-reader", { fps: 15, qrbox: 600 });
+      html5QrcodeScanner.render(onScanSuccess);
+    </script>
+  </body>
+</html>
