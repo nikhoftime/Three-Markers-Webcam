@@ -47,6 +47,14 @@ function draw() {
   
   if (qr1Scanned && qr2Scanned && qr3Scanned && qr4Scanned && qr5Scanned && qr6Scanned ) {
     image(qr7, width * 0.5, height * 0.5, qrSize, qrSize)
+      
+    push();
+    textAlign(CENTER, TOP);
+    textSize(32);
+    fill(0); 
+    textFont('Alumni Sans SC')
+    text("Well done! Scan the QR Code with your phone!", width / 2, height * 0.85);
+    pop();
     
   }
   
