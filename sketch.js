@@ -49,7 +49,7 @@ function draw() {
     image(qr7, width * 0.5, height * 0.5, qrSize, qrSize)
       
     push();
-    textAlign(CENTER, TOP);
+    textAlign(CENTER, CENTER);
     textSize(48);
     fill(0); 
     textFont('Alumni Sans SC')
