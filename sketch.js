@@ -9,7 +9,7 @@ let qr1Scanned = false,
 
 
 let fireworks = [];
-let qrSize = 278;
+let qrSize = 228;
 
 
 function preload() {
