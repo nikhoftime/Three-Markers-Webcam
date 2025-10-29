@@ -46,7 +46,7 @@ function draw() {
   if (!qr6Scanned) image(qr6, width * 0.75, height * 0.70, qrSize, qrSize); 
   
   if (qr1Scanned && qr2Scanned && qr3Scanned && qr4Scanned && qr5Scanned && qr6Scanned ) {
-    image(qr7, width * 0.5, height * 0.5, qrSize, qrSize)
+    image(qr7, width * 0.5, height * 0.5, 300, 300)
       
     push();
     textAlign(CENTER, CENTER);
