@@ -53,7 +53,7 @@ function draw() {
     textSize(48);
     fill(0); 
     textFont('Alumni Sans SC')
-    text("Well done! Scan the QR Code with your phone!", width / 2, height * 1);
+    text("Well done! Scan the QR Code with your phone!", width / 2, height /4);
     pop();
     
   }
