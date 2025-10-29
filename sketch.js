@@ -50,10 +50,10 @@ function draw() {
       
     push();
     textAlign(CENTER, CENTER);
-    textSize(48);
+    textSize(64);
     fill(0); 
     textFont('Alumni Sans SC')
-    text("Well done! Scan the QR Code with your phone!", width / 2, height / 4);
+    text("Well done!\nScan the QR Code with your phone!", width / 2, height / 4);
     pop();
     
   }
