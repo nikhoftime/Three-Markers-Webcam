@@ -31,19 +31,19 @@ function draw() {
   imageMode(CENTER);
  
   //first row yo
-  if (!qr1Scanned) image(qr1, width * 0.25, height * 0.23, qrSize, qrSize);
+  if (!qr1Scanned) image(qr1, width * 0.25, height * 0.3, qrSize, qrSize);
   
-  if (!qr2Scanned) image(qr2, width * 0.50, height * 0.23, qrSize, qrSize);
+  if (!qr2Scanned) image(qr2, width * 0.50, height * 0.3, qrSize, qrSize);
 
 
-  if (!qr3Scanned)  image(qr3, width * 0.75, height * 0.23, qrSize, qrSize);
+  if (!qr3Scanned)  image(qr3, width * 0.75, height * 0.3, qrSize, qrSize);
 
   //second row yo
-  if (!qr4Scanned) image(qr4, width * 0.25, height * 0.70, qrSize, qrSize);
+  if (!qr4Scanned) image(qr4, width * 0.25, height * 0.80, qrSize, qrSize);
 
-  if (!qr5Scanned) image(qr5, width * 0.50, height * 0.70, qrSize, qrSize);
+  if (!qr5Scanned) image(qr5, width * 0.50, height * 0.80, qrSize, qrSize);
 
-  if (!qr6Scanned) image(qr6, width * 0.75, height * 0.70, qrSize, qrSize); 
+  if (!qr6Scanned) image(qr6, width * 0.75, height * 0.80, qrSize, qrSize); 
   
   if (qr1Scanned && qr2Scanned && qr3Scanned && qr4Scanned && qr5Scanned && qr6Scanned ) {
     image(qr7, width * 0.5, height * 0.5, 300, 300)
@@ -83,37 +83,37 @@ function codeScanned(text) {
     case "https://www.ntu.edu.sg/":
       qr1Scanned = true;
       fireworks.push(new Firework());
-      fireworks.at(-1).trigger(width * 0.25, height * 0.23);
+      fireworks.at(-1).trigger(width * 0.25, height * 0.3);
       break;
       
     case "https://www.nus.edu.sg/":
       qr2Scanned = true;
       fireworks.push(new Firework());
-      fireworks.at(-1).trigger(width * 0.50, height * 0.23);
+      fireworks.at(-1).trigger(width * 0.50, height * 0.3);
       break;
       
     case "https://www.suss.edu.sg/":          
       qr3Scanned = true;
       fireworks.push(new Firework());
-      fireworks.at(-1).trigger(width * 0.75, height * 0.23);
+      fireworks.at(-1).trigger(width * 0.75, height * 0.3);
   break;
 
     case "https://www.sutd.edu.sg/":          
       qr4Scanned = true;
       fireworks.push(new Firework());
-      fireworks.at(-1).trigger(width * 0.25, height * 0.70);
+      fireworks.at(-1).trigger(width * 0.25, height * 0.80);
   break;
 
     case "https://www.smu.edu.sg/":          
       qr5Scanned = true;
       fireworks.push(new Firework());
-      fireworks.at(-1).trigger(width * 0.50, height * 0.70);
+      fireworks.at(-1).trigger(width * 0.50, height * 0.80);
   break;
 
     case "https://uas.edu.sg/": 
       qr6Scanned = true;
       fireworks.push(new Firework());
-      fireworks.at(-1).trigger(width * 0.75, height * 0.70);
+      fireworks.at(-1).trigger(width * 0.75, height * 0.80);
   break;
   }
 }
